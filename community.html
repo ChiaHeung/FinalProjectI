@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Community</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+      <!-- MDB -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet"/>
+      <!--logo-->
+      <link rel="icon" href="images/logo.png">
+      
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/inputPost.css">
+      <link rel="stylesheet" href="css/post.css">
+
+      <!-- MDB -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+      <!-- MDB -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+
+   </head>
+   
+   <body>
+      <header> 
+         <!-- Navbar -->
+            <!-- M&M Logo-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+               <a class="navbar-brand" href="index.html">
+                 <img src="Images/logoHeader.jpg" height="50px" alt="M&M Logo"/>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+   
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-1"></div>
+                     <div class="col-md-9">
+                        <div style="width:100%; margin:0 auto;">
+                        <!-- Center Navigation -->
+                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                 <a class="nav-link active" href="community.html" class="text-dark"><i class="fas fa-comments"></i> Movie Community  </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="Recommendationpage.html"><i class="fas fa-video"></i> Movie Recommendation  </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="top10.html"><i class="fas fa-crown"></i> Top 10 Movie (Weekly)  </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link dropdown-toggle" href="#" ></i> About</a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="AboutUs.html"> About Us</a></li>
+                                    <li><a class="dropdown-item" href="ContactUs.html"> Contact Us</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- search bar -->
+                     <div class="col-md-2 search-function">
+                        <div class="input-group searchbar">
+                           <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                           aria-describedby="search-addon" />
+                           <button id="search-button" type="button" class="btn btn-success">
+                              <i class="fas fa-search"></i>
+                         </div>
+                     </div>
+                  </div>
+               </div>  
+   
+               <!-- Right elements of navbar -->
+               <div class="d-flex align-items-center ">
+                  <!-- Notifications -->
+                  <a class="text-reset me-3 dropdown-toggle hidden-arrow notice" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                     <i class="far fa-bell"></i>
+                     <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                           <a class="dropdown-item" href="#">Latest Movie Release</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">Community Message</a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">Comments</a>
+                        </li>
+                     </ul>
+            
+                  <!-- Login Avatar -->
+                  <a class="dropdown-toggle d-flex align-items-center hidden-arrow avatar" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                   <i class="fas fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                   <li>
+                       <a class="dropdown-item" href="#">My profile</a>
+                   </li>
+                   <li>
+                       <a class="dropdown-item" href="#">Settings</a>
+                   </li>
+                   <li>
+                       <a class="dropdown-item" href="#">Logout</a>
+                   </li>
+                  </ul>
+               </div>
+               <!-- END Right elements -->
+            </nav>
+            <!-- END navbar -->
+
+         <!-- Mask -->
+         <div id="intro" class="view">
+            <div class="mask" id="overlay"> <!--rgba black strong to have a strong contrast-->
+               <div class="container-fluid d-flex align-items-center  justify-content-center h-100">
+                  <div class="row d-flex justify-content-center text-center">
+                     <div class="col-md-10">
+                        <!-- heading -->
+                        <h2 class="display-4 font-weight-bold white-text">Sharing</h2>
+
+                        <!-- divider -->
+                        <hr class="hr-light"> <!--horizontal line-->
+
+                        <!-- Description -->
+                        <h4 class="white-text my-4">"The miracle is this: The more we share the more we have."</h4>
+                           <p class="white-text empha font-weight-bold">— Leonard Nimoy<p>
+                        <button type="button" class="btn btn-outline-white no-outline">Scroll Down! <i class="far fa-hand-point-down"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Mask -->
+      </header>
+
+      <!-- Post Now hold by inputPost.css -->
+      <!-- POST hold by post.css -->
+      
+         <!-- begin profile-content -->
+         <div class="profile-content">
+            <!-- begin tab-content -->
+            <div class="tab-content p-0">
+               <!-- begin #profile-post tab -->
+               <div class="tab-pane fade active show" id="profile-post">
+                  <!-- begin timeline -->
+                  <ul class="timeline">
+                     <li><!-- POST NOW -->
+                        <!-- begin timeline-time -->
+                        <div class="timeline-time">
+                           <span class="date">now</span>
+                           <span class="time">08:00</span>
+                        </div>
+                        <!-- end timeline-time -->
+                        <!-- begin timeline-icon -->
+                        <div class="timeline-icon">
+                           <a href="javascript:;">&nbsp;</a>
+                        </div>
+                        <!-- end timeline-icon -->
+                        <!-- begin timeline-body -->
+                        
+                        <div class="timeline-body">
+                           <div class="row input-post">
+                              <!-- Avatar Image -->
+                              <div class="col-md-2">
+                                 <img class="userimage" src="images/ghost.jpg" alt="userimage">
+                              </div>
+                              <!-- Post Input Area -->
+                              <div class="col-md-10">
+                                 <section class="panel  timeline-post-to">
+                                    <div class="panel-body">
+                                          <form role="form">
+                                             <textarea rows="3" class="form-control" placeholder="What's on your mind?" ></textarea>
+                                             <!--  -->
+                                             <div class="row">
+                                                <div class="col-sm-9">
+                                                      <a class="btn btn-sm btn-default"><i class="fas fa-image"></i></a>
+                                                      <a class="btn btn-sm btn-default"><i class="fas fa-video"></i></a>
+                                                      <a class="btn btn-sm btn-default"><i class="fa fa-music"></i></a>
+                                                </div>
+                                                <div class="col-sm-3 text-right">
+                                                      <button type="submit" class="btn btn-primary">Post</button>
+                                                </div>
+                                             </div>
+                                          </form>
+                                    </div>
+                                 </section>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end timeline-body -->
+                     </li>
+                     <li><!-- POST 1 -->
+                        <!-- begin timeline-time -->
+                        <div class="timeline-time">
+                           <span class="date">today</span>
+                           <span class="time">04:20</span>
+                        </div>
+                        <!-- end timeline-time -->
+                        <!-- begin timeline-icon -->
+                        <div class="timeline-icon">
+                           <a href="javascript:;">&nbsp;</a>
+                        </div>
+                        <!-- end timeline-icon -->
+                        <!-- begin timeline-body -->
+   
+                        
+                        <div class="timeline-body">
+                           <div class="timeline-header">
+                              <span class="userimage"><img src="images/user.png" alt=""></span>
+                              <span class="username"><a href="javascript:;">Homer Terry </a> <small></small></span>
+                              <span class="pull-right text-muted">18k Views</span>
+                           </div>
+                           <div class="timeline-content">
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus turpis quis tincidunt luctus.
+                                 Nam sagittis dui in nunc consequat, in imperdiet nunc sagittis.
+                              </p>
+                           </div>
+                           <div class="timeline-likes">
+                              <div class="stats-right">
+                                 <span class="stats-text">259 Shares</span>
+                                 <span class="stats-text">21 Comments</span>
+                              </div>
+                              <div class="stats">
+                                 <span class="fa-stack fa-fw stats-icon">
+                                 <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                                 <i class="fa fa-heart fa-stack-1x fa-inverse t-plus-1"></i>
+                                 </span>
+                                 <span class="fa-stack fa-fw stats-icon">
+                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                 <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                                 </span>
+                                 <span class="stats-total">4.3k</span>
+                              </div>
+                           </div>
+                           <div class="timeline-footer">
+                              <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+                              <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a> 
+                              <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                           </div>
+                           <div class="timeline-comment-box">
+                              <div class="user"><img src="images/ghost.jpg"></div>
+                              <div class="input">
+                                 <form action="">
+                                    <div class="input-group">
+                                       <input type="text" class="form-control rounded-corner" placeholder="Write a comment...">
+                                       <span class="input-group-btn p-l-10">
+                                       <button class="btn btn-primary f-s-12 rounded-corner" type="button">Comment</button>
+                                       </span>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end timeline-body -->
+                     </li>
+                     <li><!-- POST 2 -->
+                        <!-- begin timeline-time -->
+                        <div class="timeline-time">
+                           <span class="date">yesterday</span>
+                           <span class="time">20:17</span>
+                        </div>
+                        <!-- end timeline-time -->
+                        <!-- begin timeline-icon -->
+                        <div class="timeline-icon">
+                           <a href="javascript:;">&nbsp;</a>
+                        </div>
+                        <!-- end timeline-icon -->
+   
+                        <!-- begin timeline-body -->
+                        <div class="timeline-body">
+                           <div class="timeline-header">
+                              <span class="userimage"><img src="images/user.png" alt=""></span>
+                              <span class="username">Adele Gutierrez</span>
+                              <span class="pull-right text-muted">82 Views</span>
+                           </div>
+                           <div class="timeline-content">
+                              <p>Lorem ipsum dolor sit amet. Et illum quia et maxime iste id consequuntur autem non voluptatum cupiditate sed repudiandae voluptatem est ipsum odit! Sed eligendi aliquid quo suscipit autem et assumenda optio eum doloremque quaerat ea magnam molestiae et quidem sint. Nam labore nesciunt sed numquam temporibus qui sint fugit ut placeat vero.</p>
+                              <img src="images/godzilla.jpg">
+                           </div>
+                           <div class="timeline-likes">
+                              <div class="stats-right">
+                                 <span class="stats-text">20 Shares</span>
+                                 <span class="stats-text">2 Comments</span>
+                              </div>
+                              <div class="stats">
+                                 <span class="fa-stack fa-fw stats-icon">
+                                 <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                                 <i class="fa fa-heart fa-stack-1x fa-inverse t-plus-1"></i>
+                                 </span>
+                                 <span class="fa-stack fa-fw stats-icon">
+                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                 <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                                 </span>
+                                 <span class="stats-total">50</span>
+                              </div>
+                           </div>
+                           <div class="timeline-footer">
+                              <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+                              <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a> 
+                              <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                           </div>
+                        </div>
+                        <!-- end timeline-body -->
+                     </li>
+                     <li><!-- POST 3 -->
+                        <!-- begin timeline-icon -->
+                        <div class="timeline-icon">
+                           <a href="javascript:;">&nbsp;</a>
+                        </div>
+                        <!-- end timeline-icon -->
+                        <!-- begin timeline-body -->
+                        <div class="timeline-body">
+                           Loading...
+                        </div>
+                        <!-- begin timeline-body -->
+                     </li>
+                  </ul>
+                  <!-- end timeline -->
+               </div>
+               <!-- end #profile-post tab -->
+            </div>
+            <!-- end tab-content -->
+         </div>
+         <!-- end profile-content -->
+         <!-- END POST -->
+        </div>
+   
+      <footer>
+         <div class="footer-copyright text-center text-light" style="background-color: black; font-family:Verdana, Geneva, Tahoma, sans-serif">
+            &copy;2021-2022 by Movie Moment(M&M).com. </br>
+            All rights reserved.
+         </div>
+      </footer>
+<!-- MDB -->
+</body>
+</html>
+
+
